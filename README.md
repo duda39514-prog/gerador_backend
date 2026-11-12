@@ -98,7 +98,7 @@ Depois de baixar:
 4. Abra a pasta extraída no VS Code.
 A estrutura gerada deverá ser semelhante a esta:
 backend-gerado/
-│
+``│
 ├── config/
 │   └── db.js
 │
@@ -112,6 +112,7 @@ backend-gerado/
 ├── package.json
 ├── .env.example
 └── README.md
+``
 
 
 Os arquivos são gerados de acordo com as tabelas identificadas no SQL.
