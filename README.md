@@ -41,10 +41,11 @@ Projeto desenvolvido com foco em aprendizado e aplicação prática de desenvolv
 ## Como usar:
 
 Como utilizar o Backend Generator
-1. Prepare o banco de dados
+## 1. Prepare o banco de dados
 - Tenha um banco de dados MySQL com suas tabelas criadas.
 - Exporte a estrutura do banco em um arquivo .sql pelo MySQL Workbench.
-2. Inicie o Backend Generator
+
+## 2. Inicie o Backend Generator
 - Abra a pasta do gerador no VS Code.
 - No terminal, execute:
 node server.js
@@ -52,12 +53,13 @@ node server.js
 
 - Acesse http://localhost:3000 pelo navegador.
 
-3. Gere seu backend
+## 3. Gere seu backend
 - Clique em selecionar arquivo.
 - Escolha seu arquivo .sql.
 - Clique em Gerar Backend.
 - Aguarde o download do arquivo backend-gerado.zip.
-4. Configure o projeto
+  
+## 4. Configure o projeto
 - Extraia o arquivo ZIP.
 - Abra a pasta extraída no VS Code.
 - No terminal, execute:
@@ -66,7 +68,7 @@ npm install
 
 - Copie o arquivo .env.example e renomeie a cópia para .env.
 - Configure os dados de acesso ao MySQL.
-5. Execute o backend
+## 5. Execute o backend
 
 No terminal, execute:
 node server.js
@@ -74,7 +76,7 @@ node server.js
 
 Se tudo estiver configurado corretamente, o servidor será iniciado.
 
-6. Teste com o Insomnia
+## 6. Teste com o Insomnia
 - Abra o Insomnia.
 - Crie uma requisição com o endereço do servidor.
 - Escolha o método HTTP (GET, POST, PUT ou DELETE).
