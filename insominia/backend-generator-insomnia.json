@@ -1,0 +1,78 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2026-11-12T19:10:32.589670+00:00",
+  "__export_source": "insomnia.desktop.app",
+  "resources": [
+    {
+      "_id": "wrk_backend_generator",
+      "parentId": null,
+      "modified": 0,
+      "created": 0,
+      "name": "Backend Generator",
+      "description": "Testes da API local do Backend Generator",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "env_backend_generator",
+      "parentId": "wrk_backend_generator",
+      "modified": 0,
+      "created": 0,
+      "name": "Base Environment",
+      "data": {
+        "base_url": "http://localhost:3000"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "base_url"
+        ]
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1,
+      "_type": "environment"
+    },
+    {
+      "_id": "fld_backend_generator",
+      "parentId": "wrk_backend_generator",
+      "modified": 0,
+      "created": 0,
+      "name": "Geração de backend",
+      "description": "Envie um arquivo SQL para gerar o projeto backend em ZIP.",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": 1,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_gerar_backend",
+      "parentId": "fld_backend_generator",
+      "modified": 1,
+      "created": 1,
+      "name": "Gerar backend (arquivo SQL)",
+      "description": "Selecione um arquivo .sql no campo multipart chamado database e clique em Send.",
+      "url": "{{ _.base_url }}/gerar",
+      "method": "POST",
+      "body": {
+        "mimeType": "multipart/form-data",
+        "params": [
+          {
+            "id": "pair_database",
+            "name": "database",
+            "value": "",
+            "description": "Selecione aqui seu arquivo .sql",
+            "type": "file",
+            "fileName": ""
+          }
+        ]
+      },
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": 1,
+      "isPrivate": false,
+      "_type": "request"
+    }
+  ]
+}

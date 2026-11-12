@@ -1,0 +1,181 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0c1020;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 30px;
+    text-align: center;
+    border-bottom: 1px solid #252c43;
+}
+
+header h1 {
+    color: #70a5ff;
+    letter-spacing: 4px;
+    font-size: 28px;
+}
+
+header p {
+    color: #a5aec5;
+    margin-top: 10px;
+}
+
+main {
+    width: 85%;
+    max-width: 1000px;
+    margin: 60px auto;
+}
+
+.introducao {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.introducao h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.introducao p {
+    color: #a5aec5;
+    line-height: 1.6;
+}
+
+.upload-area {
+    background: #151c30;
+    border: 1px dashed #527fc9;
+    border-radius: 15px;
+    padding: 45px 20px;
+    text-align: center;
+}
+
+.icone {
+    font-size: 45px;
+    color: #70a5ff;
+    margin-bottom: 15px;
+}
+
+.upload-area h2 {
+    margin-bottom: 12px;
+}
+
+.upload-area p {
+    color: #a5aec5;
+    margin-bottom: 20px;
+}
+
+#arquivoSQL {
+    display: none;
+}
+
+.botao-arquivo {
+    display: inline-block;
+    background: #263b60;
+    padding: 13px 25px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.botao-arquivo:hover {
+    background: #365a91;
+}
+
+#nomeArquivo {
+    font-size: 13px;
+}
+
+#btnGerar {
+    display: block;
+    margin: 15px auto;
+    padding: 15px 35px;
+    background: #70a5ff;
+    color: #0c1020;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btnGerar:hover {
+    background: #a0c3ff;
+    transform: translateY(-2px);
+}
+
+#btnGerar:disabled {
+    opacity: 0.5;
+    cursor: wait;
+}
+
+#mensagem {
+    margin-top: 15px;
+}
+
+.recursos {
+    margin-top: 60px;
+}
+
+.recursos h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.card {
+    background: #151c30;
+    border: 1px solid #252c43;
+    border-radius: 10px;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+.card span {
+    font-size: 30px;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+    color: #70a5ff;
+}
+
+.card p {
+    color: #a5aec5;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #737f9d;
+    border-top: 1px solid #252c43;
+    font-size: 12px;
+}
+
+@media (max-width: 700px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main {
+        width: 92%;
+    }
+
+    .introducao h2 {
+        font-size: 25px;
+    }
+}
