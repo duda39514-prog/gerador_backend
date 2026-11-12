@@ -40,7 +40,7 @@ Projeto desenvolvido com foco em aprendizado e aplicação prática de desenvolv
 
 ## Como usar:
 
-1. Prepare seu banco de dados
+## 1. Prepare seu banco de dados:
 Primeiro, você precisa ter um banco de dados MySQL.
 
 Por exemplo, imagine que você tenha uma tabela chamada alunos:
@@ -56,7 +56,7 @@ Você precisa salvar a estrutura do banco em um arquivo com a extensão .sql.
 
 Se estiver usando MySQL Workbench, pode exportar a estrutura do banco para um arquivo SQL.
 
-2. Inicie o Backend Generator
+## 2. Inicie o Backend Generator
 Abra a pasta backend-generator no VS Code.
 
 No terminal, execute:
@@ -68,7 +68,8 @@ Backend Generator rodando em http://localhost:3000
 
 
 Não feche o terminal enquanto estiver utilizando o gerador.
-3. Abra o site no Edge
+
+## 3. Abra o site no Edge
 Abra o Microsoft Edge e acesse:
 Backend Generator
 Local
@@ -76,7 +77,8 @@ Local
 http://localhost:3000
  Copiar endereço
 Você verá a página inicial do seu gerador.
-4. Gere seu backend
+
+## 4. Gere seu backend
 Na página do gerador:
 1. Clique no botão para selecionar um arquivo.
 2. Escolha seu arquivo .sql.
@@ -88,7 +90,7 @@ Resultado esperado
 O navegador receberá um arquivo chamado:
 
 backend-gerado.zip
-5. Extraia o arquivo ZIP
+## 5. Extraia o arquivo ZIP
 Depois de baixar:
 1. Localize o arquivo ZIP na pasta Downloads.
 2. Clique com o botão direito.
@@ -113,7 +115,7 @@ backend-gerado/
 
 
 Os arquivos são gerados de acordo com as tabelas identificadas no SQL.
-6. Configure o backend gerado
+## 6. Configure o backend gerado
 Agora você precisa preparar o projeto para funcionar.
 
 Primeiro: abra o terminal na pasta extraída e execute:
@@ -136,7 +138,7 @@ DB_NAME=seu_banco
 Os nomes precisam corresponder aos utilizados no config/db.js.
 
 Terceiro: confira se o banco de dados existe no MySQL e se suas tabelas estão criadas.
-7. Execute o backend gerado
+ ## 7. Execute o backend gerado
 No terminal do projeto extraído:
 node server.js
 
@@ -144,7 +146,7 @@ node server.js
 Se estiver tudo configurado corretamente, o servidor iniciará.
 
 Agora você poderá testar as rotas geradas.
-8. Teste com o Insomnia
+## 8. Teste com o Insomnia
 O Insomnia é uma ferramenta complementar. Ele permite testar as rotas do backend enviando requisições HTTP.
 
 Por exemplo, se o gerador criou uma rota para alunos:
